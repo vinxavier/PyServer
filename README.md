@@ -14,12 +14,12 @@ Em um terminal dentro da pasta do projeto:
  
  ### Usando o WEB SERVER
   
-  Com as configurações padrões do flask o servidor será iniciado em: `http://127.0.0.1:5000/`.
+  Com as configurações padrões do flask o servidor será iniciado em: `http://0.0.0.0:5000/`.
 
  
  #### Como usar a API de IAC:<br/> 
 
-`POST http://127.0.0.1:5000/api/IAC`
+`POST http://0.0.0.0:5000/api/IAC`
 
  Com um json com os seguintes paramêtros:
  
@@ -47,7 +47,7 @@ Em um terminal dentro da pasta do projeto:
 ~~~
 
  #### Como usar a API de IMC:<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`POST http://127.0.0.1:5000/api/IMC`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`POST http://0.0.0.0:5000/api/IMC`
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com um json com os seguintes paramêtros: <br/>
  - peso `# Número maior do que zero.`
