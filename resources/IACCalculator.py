@@ -17,7 +17,7 @@ class IACCalculator(Resource):
 
     def __calc_iac(self, circ, altura):
         iac_divisor = altura ** (1.5) 
-        return ( circ / iac_divisor ) - 18
+        return round(( circ / iac_divisor ) - 18, 2)
 
     def __condition(self, iac, sexo):
         if sexo == "m":
