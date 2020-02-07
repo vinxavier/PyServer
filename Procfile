@@ -1,1 +1,1 @@
-web: unicorn run:app --log-file=-
+web: unicorn run:app
