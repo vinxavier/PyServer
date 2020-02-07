@@ -1,1 +1,1 @@
-web: unicorn server:app
+web: unicorn run:app
