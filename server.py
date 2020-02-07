@@ -1,10 +1,14 @@
 from flask import Flask
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    
+    from app import api_bp
+    app.register_blueprint(api_bp, url_prefix='/api')
 
-from app import api_bp
-app.register_blueprint(api_bp, url_prefix='/api')
+    return app
 
-return app
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app = create_app()
+    app.run(debug=True)
